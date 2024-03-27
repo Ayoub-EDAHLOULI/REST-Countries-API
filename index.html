@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST Countries API</title>
+    <!--CSS Style Link-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Where in the world?</h1>
+        <button id="lightBtn">Light Mode</button>
+      </nav>
+    </header>
+    <div class="search">
+      <div class="searchInput">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search for a country..." id="filterInput">
+      </div>
+      <select id="regions">
+        <option value="">Filter By Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+    <div id="app" class="container">
+      <div class="card">
+        <img src="./Flag_of_Morocco.svg.png" alt="">
+        <div class="body">
+          <h3 class="countryName">Morocco</h3>
+          <div class="thePopulation">
+            <h4 class="key">Population :</h4>
+            <span class="value"> 38113241</span>
+          </div>
+          <div class="theRegion">
+            <h4 class="key">Region :</h4>
+            <h4 class="value">Africa</h4>
+          </div>
+          <div class="theCapital">
+            <h4 class="key">Capital :</h4>
+            <h4 class="value">Rabat</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
